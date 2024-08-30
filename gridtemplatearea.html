@@ -3,6 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <title>GRID TEMPLATE AREA</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: yellow;
+            display: grid;
+            grid-template-areas: 
+            "a b b c"
+            "a d e f"
+            "a g h f";
+            gap: 10px;
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 0 1.5rem;
+        }
+        #b1{
+            grid-area: a;
+            background-color: green;
+        }
+        #b2{
+            grid-area: b;
+            background-color: green;
+        }
+        #b3{
+            grid-area: c;
+            background-color: red;
+        }
+        #b4{
+            grid-area: d;
+            background-color: yellowgreen;
+        }
+        #b5{
+            grid-area: e;
+            background-color: red;
+        }
+        #b6{
+            grid-area: f;background-color: green;
+        }
+        #b7{
+            grid-area: g;
+            background-color: red;
+        }
+        #b8{
+            grid-area: h;
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
