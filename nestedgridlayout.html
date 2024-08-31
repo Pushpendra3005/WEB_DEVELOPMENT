@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>BLOG LAYOUT WEBSITE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 600px;
+            height: 500px;
+            background-color: yellow;
+            border: 1px solid red;
+            display: grid;
+            text-align: center;
+            grid-template-areas: 
+            "H H H H"
+            "M C C B"
+            "F F F F";
+            gap: 10px;
+        }
+        .box{
+            background-color: rgb(86, 86, 211);
+
+        }
+        #h{
+            grid-area: H;
+        }
+        #m{
+            grid-area: M;
+        }
+        #c{
+            grid-area: C;
+        }
+        #b{
+            grid-area: B;
+        }
+        #f{
+            grid-area: F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="h">HEADER</div>
+        <div class="box" id="m">MAIN</div>
+        <div class="box" id="c">CONTENT</div>
+        <div class="box" id="b">BLOG</a></div>
+        <div class="box" id="f">FOOTER</div>
+    </div>
+</body>
+</html>
