@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>BLOG LAYOUT WEBSITE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>Media Quries</title>
     <style>
         *{
             margin: 0;
@@ -13,7 +15,6 @@
             width: 100%;
             height: 500px;
             background-color: yellow;
-            border: 2px solid red;
             display: grid;
             text-align: center;
             grid-template-areas: 
@@ -35,19 +36,57 @@
         #c{
             grid-area: C;
         }
+        #f{
+            grid-area: F;
+        }
         #b{
             grid-area: B;
             gap: 10px;
             display: grid;
-            color: white;
-            font-weight: 700;
+            padding: 5px;
+            grid-template: repeat(2,1fr) / repeat(2,1fr);
+        }
+        .b{
+        background-color: red;
+        border: 2px solid yellow;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        place-content: center;
+        place-items: center;
+        }
+        .b:nth-child(1) {
+        grid-row: 1/4;
+      }
+        
+        @media (min-width: 500px) and (max-width: 900px) {
+            .container{
             grid-template-areas: 
-            "k l"
-            "k o";
-            padding: 2%;
+            "H H H H"
+            "M M M M"
+            "C C C C"
+            "B B B B"
+            "F F F F";
+        }
+        #h{
+            grid-area: H;
+        }
+        #m{
+            grid-area: M;
+        }
+        #c{
+            grid-area: C;
         }
         #f{
             grid-area: F;
+        }
+        #b{
+            grid-area: B;
+          display: grid;
+          grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+          padding: 5px;
+          gap: 5px;
+        }
         }
     </style>
 </head>
@@ -57,9 +96,9 @@
         <div class="box" id="m">MAIN</div>
         <div class="box" id="c">CONTENT</div>
         <div class="box" id="b">
-            <div id="box">Study blog</div>
-            <div id="box">Business blog</div>
-            <div id="box">Sports blog</div>
+            <div class="b">Study blog</div>
+            <div class="b">Business blog</div>
+            <div class="b">Sports blog</div>
         </a></div>
         <div class="box" id="f">FOOTER</div>
     </div>
