@@ -25,7 +25,6 @@
         .box{
             background-color: rgb(86, 86, 211);
             border: 1px solid red;
-
         }
         #h{
             grid-area: H;
@@ -40,6 +39,8 @@
             grid-area: B;
             gap: 10px;
             display: grid;
+            color: white;
+            font-weight: 700;
             grid-template-areas: 
             "k l"
             "k o";
@@ -49,16 +50,22 @@
             grid-area: k;
             border: 1px solid white;
             background-color: red;
+            place-content: center;
+            place-items: center;
         }
         #bb{
             grid-area: l;
             border: 1px solid white;
             background-color: red;
+            place-content: center;
+            place-items: center;
         }
         #bc{
             grid-area: o;
             border: 1px solid white;
             background-color: red;
+            place-content: center;
+            place-items: center;
         }
         #f{
             grid-area: F;
