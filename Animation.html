@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8" />
     <title>Animation</title>
+    <meta http-equiv="X-UA-Compatible" id="IE-edge">
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            animation: mov 2s linear infinite;
+            height: 4em;
+            width: 7em;
+            background: #444;
+            border-top: 3px solid red;
+            border-radius: 0 0 0.2em 0.2em;
+        }
+        @keyframes mov{
+            25%{
+                transform: rotate(-15deg);
+                border-top-color: white;
+            }
+            45%{
+                transform: rotate(0deg);
+                border-top-color: blueviolet;
+            }
+            65%{
+                transform: rotate(15deg);
+                border-top-color: green;
+            }
+            0%{
+                transform: rotate(0deg);
+                border-top-color: chartreuse;
+            }
+            100%{
+                transform: rotate(0deg);
+                border-top-color: red;
+            }
+            
+        }
+        .box:hover{
+            background: blue;
+            transition: 0.3s;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box"></div>
+    </div>
 </body>
 </html>
