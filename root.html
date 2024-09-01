@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,intial-scale=1.0">
     <title>USING ROOT TAG</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --dark-blue:rgb(1, 1, 120);
+        }
+        .container{
+            background-color: purple;
+           width: 100vw;
+           height: 100vh;
+        }
+        .para{
+            color: black;
+            color: var(--dark-blue);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="para"><p><h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1></p></div>
+    </div>
 </body>
 </html>
