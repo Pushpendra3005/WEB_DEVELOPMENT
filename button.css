@@ -17,9 +17,26 @@
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.8rem 2.3rem;
+    position: relative;
+    box-shadow: 5px 5px 8px black;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    transition: all 0.8s;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+}
+.box:hover::before{
+    transform: scaleX(1);
 }
 .box:hover{
-    background-color: black;
     color: red;
-    transition: inherit 2s ease ;
+    z-index: 1;
 }
