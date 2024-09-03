@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrraper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #000;
+}
+
+/* creating root */
+:root{
+    --color:white;
+}
+
+/* styling first button */
+.first{
+    font-weight: 700;
+    width: fit-content;
+    color:var(--color);
+    background-color: rgb(35, 35, 35);
+    padding: 0.8rem 2.3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.first::before{
+    
+}
