@@ -16,19 +16,62 @@
 }
 
 /* styling first button */
-.first{
-    font-weight: 700;
-    width: fit-content;
-    color:var(--color);
-    background-color: rgb(35, 35, 35);
-    padding: 0.8rem 2.3rem;
-    border-radius: 10px;
-    outline: none;
+.first {
+    width: 220px;
+    height: 50px;
     border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
     position: relative;
     z-index: 0;
-    cursor: pointer;
+    border-radius: 10px;
 }
-.first::before{
-    
+
+.first:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.first:active {
+    color: #000
+}
+
+.first:active:after {
+    background: transparent;
+}
+
+.first:hover:before {
+    opacity: 1;
+}
+
+.first:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
