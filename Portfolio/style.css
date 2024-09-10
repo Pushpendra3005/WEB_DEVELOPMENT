@@ -15,6 +15,10 @@
     overflow-x: hidden;
 }
 
+
+
+/* Hero Section Starts */
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -271,6 +275,13 @@ a{
     }
 }
 
+/* Hero Section Ends */
+
+
+
+
+/* Project Section Starts */
+
 
 .project-section{
     background-color: rgb(231,231,231);
@@ -461,6 +472,14 @@ a{
       scale: 0.55;
     }
   }
+
+
+  /* Project Section Ends */
+
+
+  /* Skills Section Starts */
+
+
   .skills-container{
     position: relative;
     display: flex;
@@ -536,6 +555,13 @@ a{
   }
 
 
+
+  /* Skills Section Ends */
+
+
+  /* Contact Section Starts */
+
+
   .contactus-form-container{
     width: 100%;
     background-color: rgb(231,231,231);
@@ -587,3 +613,53 @@ a{
   .formbtn .btn-pink:hover{
     scale: 0.9;
   }
+  .formbtn .btn-pink i{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  /* Contact Section Ends */
+
+
+
+
+  /* Footer Section Starts */
+
+  .footer{
+    background: #343d68;
+    position: relative;
+    padding: 5rem;
+  }
+  .footer-faded-text{
+    font-size: 5em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #535c87;
+    user-select: none;
+  }
+  .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+  .link-container{
+    display: flex;
+    gap: 1.2rem;
+  }
+  .link-container div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+  .link-container div a:hover{
+    color: var(--bgOrange);
+  }
+  .icon-contaier{
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* Footer Section Ends */
